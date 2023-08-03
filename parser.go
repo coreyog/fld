@@ -47,7 +47,7 @@ func ReadAndFormat(path string, overrideOrder ...string) (lines []*Line, format 
 		list = overrideOrder
 	}
 	for _, format = range list {
-		parser, ok := parsers[format]
+		parser, ok := parsers[strings.ToLower(format)]
 		if !ok {
 			return nil, "", 0, errors.New("unknown format")
 		}

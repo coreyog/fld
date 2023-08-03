@@ -3,6 +3,7 @@ module github.com/coreyog/fld
 go 1.20
 
 require (
+	github.com/dustin/go-humanize v1.0.1
 	github.com/go-xmlfmt/xmlfmt v1.1.2
 	github.com/jessevdk/go-flags v1.5.0
 	github.com/mattn/go-runewidth v0.0.15
